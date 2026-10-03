@@ -9,6 +9,7 @@ workflows:
     scripts:
       - name: Install dependencies
         script: |
+          npm install expo --legacy-peer-deps
           npm install --legacy-peer-deps
       - name: Prebuild Expo
         script: |
