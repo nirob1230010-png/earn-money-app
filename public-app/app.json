@@ -6,11 +6,6 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -28,12 +23,12 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      [
-        "cpx-research-sdk-react-native",
-        {
-          "appId": "36801"
-        }
-      ]
-    ]
+      "expo-status-bar"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c235fada-0ed9-4378-a723-d4dab98bffda"
+      }
+    }
   }
 }

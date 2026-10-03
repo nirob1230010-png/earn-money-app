@@ -1,0 +1,27 @@
+Starting Metro Bundler
+
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+Android Bundling failed 22269ms node_modules/expo/AppEntry.js (576 modules)
+
+Error: Unable to resolve module react-native-toast-message from /data/data/com.termux/files/home/ultimate-app/public-app/App.js: react-native-toast-message could not be found within the project or in these directories:
+  node_modules
+  ../node_modules
+[0m [90m 3 |[39m [36mimport[39m { createNativeStackNavigator } [36mfrom[39m [32m'@react-navigation/native-stack'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { [33mSafeAreaProvider[39m } [36mfrom[39m [32m'react-native-safe-area-context'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mToast[39m [36mfrom[39m [32m'react-native-toast-message'[39m[33m;[39m
+ [90m   |[39m                    [31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mimport[39m [33mSplash[39m [36mfrom[39m [32m'./src/screens/Splash'[39m[33m;[39m
+ [90m 8 |[39m [36mimport[39m [33mLogin[39m [36mfrom[39m [32m'./src/screens/Login'[39m[33m;[39m[0m
+
+Import stack:
+
+ App.js
+ | import "react-native-toast-message"
+
+ node_modules/expo/AppEntry.js
+ | import "../../App"
+
+ 
+ | import "./node_modules/expo/AppEntry"
+
