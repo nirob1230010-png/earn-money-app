@@ -13,7 +13,7 @@ workflows:
           npm install --legacy-peer-deps
       - name: Prebuild Expo
         script: |
-          npx expo prebuild --clean
+          npx expo prebuild --clean --no-install
       - name: Build Android APK
         script: |
           cd android
